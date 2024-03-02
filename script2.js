@@ -3,7 +3,7 @@ function getCookie(name) {
     var cookies = document.cookie.split("; ");
     for (var i = 0; i < cookies.length; i++) {
         var cookie = cookies[i].split("=");
-        if (cookie[0] === name) {
+        if (cookie[0] === name) { 
             return cookie[1];
         }
     }
@@ -27,7 +27,7 @@ window.onload = function() {
         document.getElementById("username").innerText = username;
     } else {
         // Redirect to the login page if there's no valid cookie
-        // window.location.href = "index.html";
+        window.location.href = "index.html";
     }
 };
 
