@@ -26,7 +26,7 @@ window.onload = function() {
         document.getElementById("username").innerText = username;
     } else {
         // Redirect to the login page if there's no valid cookie
-        // window.location.href = "index.html";
+        window.location.href = "index.html";
     }
 };
 
