@@ -11,7 +11,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         // Set a cookie to remember the login state for 60 minutes
         var now = new Date();
         var expireTime = new Date(now.getTime() + 60 * 60 * 1000); // 60 minutes
-        document.cookie = `username=${username};pass=${password}`; // Specify path as '/'
+        document.cookie = `username=${username};`; // Specify path as '/'
         
         // Redirect to dashboard or perform other actions
         window.location.href = "dashboard.html";

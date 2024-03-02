@@ -21,9 +21,8 @@ function logout() {
 // On page load, check if there's a valid cookie and populate the username
 window.onload = function() {
     var username = getCookie("username");
-    var pass = getCookie("pass");
     console.log(username)
-    if (username !== "" &&pass !=="" ) {
+    if (username !== ""  ) {
         document.getElementById("username").innerText = username;
     } else {
         // Redirect to the login page if there's no valid cookie
